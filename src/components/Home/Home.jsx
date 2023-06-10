@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className='w-full h-screen'>
             <img className='top-0 left-0 object-cover w-full h-screen' 
-            src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" />
+            src="https://www.springboard.com/blog/wp-content/uploads/2022/08/programming-skills.png" alt="" />
             <div className='absolute left-0 w-full h-screen top-16 bg-black/60'></div>
             <div className='absolute flex flex-col justify-center w-full h-full text-white top-16'>
                 {/* <div className='max-w-[1100px] m-auto absolute p-4 md:left-[10%]'> */}
