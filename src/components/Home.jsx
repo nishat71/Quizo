@@ -1,4 +1,5 @@
 import React from 'react';
+import Topics from './Topics';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                     <button className='px-3 py-2 font-medium tracking-wide text-white transition duration-200 bg-transparent border border-white rounded-md shadow-md hover:bg-white hover:text-black focus:shadow-outline focus:outline-none'>Read More</button>
                 </div>
             </div>
+            <Topics/>
         </div>
     );
 };

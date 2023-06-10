@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/Home/Home";
 import Error from "../layout/Error";
-import Root from "../components/Root";
-import Blog from "../components/Blog/Blog";
-import Topics from "../components/Topics/Topics";
-import Statistics from "../components/Statistics/Statistics";
 
+import Home from '../components/Home.jsx';
+import Topics from "../components/Topics";
+import Statistics from "../components/Statistics";
+import Blog from "../components/Blog"
+import Root from "../components/Root";
+import TopicDetails from "../components/TopicDetails";
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     path:"/",
     element:<Root/>,
     errorElement:<Error/>,
+    loader: ()=> fetch("https://openapi.programming-hero.com/api/quiz"),
     children:[
      {
       path:"/",
@@ -24,7 +26,14 @@ const router = createBrowserRouter([
      },
      {
       path:"/topics",
-      element:<Topics/>
+      element:<Topics/>,
+     },
+     {
+      path:"/topic/:id",
+      element:<TopicDetails/>,
+      loader: async({params})=>{
+         return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+      }
      },
      {
       path:"/statistics",
