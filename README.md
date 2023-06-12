@@ -3,7 +3,7 @@
 A simple React app built with React & React Router Dom.
 
 ## Live Link
-Hosted in Netlify -> 
+Hosted in Netlify -> [Quizo](https://quizo-quiz-app.netlify.app/)
 
 ## API 
 Documentation Link -> 
