@@ -11,16 +11,15 @@ const QuizQuestion = ({quiz}) => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     
     const showAnswer = ()=>{
-        console.log(correctAnswer);
-        toast.success("Correct Answer is:",{correctAnswer}, {autoClose:2000});
+        toast.info(`Correct Answer:  ${correctAnswer}`, { autoClose: 2000 });
     }
 
-    const optionClicked = (option)=>{
+    const handleCheckAnswer = (option)=>{
         if(option === correctAnswer){
             toast.success("Answer is Correct", {autoClose:1000});
         }
         else{
-            toast.warning("Answer is Wrong", {autoClose:1000});
+            toast.error("Answer is Wrong", {autoClose:1000});
         }
     }
   
@@ -34,7 +33,7 @@ const QuizQuestion = ({quiz}) => {
             { 
                 options.map((option,index)=>{
                     return (
-                        <button key={index} className={`block w-10/12 p-4 m-3 mx-auto text-lg font-semibold border border-gray-600 rounded-full`} onClick={()=>optionClicked(option)}>
+                        <button key={index} className={`block w-10/12 p-4 m-3 mx-auto text-lg font-semibold border border-gray-600 rounded-full`} onClick={()=>handleCheckAnswer(option)}>
                           <input type="radio" className='w-6 h-4 mr-2' id='option' name='quiz-option' value="option"/>
                             {option}
                         </button>
