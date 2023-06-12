@@ -5,8 +5,8 @@ A simple React app built with React & React Router Dom.
 ## Live Link
 Hosted in Netlify -> [Quizo](https://quizo-quiz-app.netlify.app/)
 
-## API 
-Documentation Link -> 
+## Context API
+Documentation Link -> [Link](https://reactjs.org/docs/context.html#api)
 
 
 ## React Router Dom v6.4 
