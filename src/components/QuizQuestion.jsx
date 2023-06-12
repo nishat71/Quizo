@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import QuizOption from './QuizOption';
 import { AiFillEye } from 'react-icons/ai';
 import {toast} from 'react-toastify';
 import style from '../assets/styles/Question.style.css'
 
-const QuizQuestion = ({quiz}) => {
+const QuizQuestion = ({quiz,currentQuestion}) => {
     const {question,options,correctAnswer, id} = quiz;
     // console.log('quiz',quiz);
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    
     
     const showAnswer = ()=>{
         toast.info(`Correct Answer:  ${correctAnswer}`, { autoClose: 2000 });
     }
 
+    
     const handleCheckAnswer = (option)=>{
         if(option === correctAnswer){
             toast.success("Answer is Correct", {autoClose:1000});
@@ -26,7 +27,7 @@ const QuizQuestion = ({quiz}) => {
     return (
         <div className='px-4 py-16 mx-auto my-5 bg-white shadow-lg sm:max-w-xl md:max-w-full lg:max-w-screen-md md:px-24 lg:px-8 lg:py-10'>
           <div className='flex'>
-            <h2 className='text-2xl font-bold max-w-[600px] text-center mx-auto text-gray-800 mb-5'>Quiz :{currentQuestion+1} {question}</h2>
+            <h2 className='text-2xl font-bold max-w-[600px] text-center mx-auto text-gray-800 mb-5'>Quiz :{currentQuestion} {question.slice(3,-4)}</h2>
             <button className='text-2xl text-gray-600' onClick={()=>showAnswer()}><AiFillEye/></button>
           </div>
             
@@ -45,6 +46,10 @@ const QuizQuestion = ({quiz}) => {
 };
 
 export default QuizQuestion;
+
+
+
+
 
 
 {/* {
