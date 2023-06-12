@@ -5,7 +5,7 @@ import Topic from './Topic';
 const Topics = () => {
   const topics = useContext(TopicContext);
   const topicData = topics.data;
-  console.log(topicData);
+  // console.log(topicData);
   
   
   return (
