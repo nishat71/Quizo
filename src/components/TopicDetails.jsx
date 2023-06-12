@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Quiz from './Quiz';
+import QuizQuestion from './QuizQuestion';
 
 const TopicDetails = () => {
     const TopicDetails = useLoaderData();
@@ -14,7 +14,7 @@ const TopicDetails = () => {
             <h2 className='text-2xl font-extrabold leading-none tracking-normal text-center'>Quiz of {name}</h2>
             <div>
             {
-                TopicDatas.questions.map((quiz)=><Quiz key={quiz.id} quiz={quiz}></Quiz>)
+                questions.map((quiz)=><QuizQuestion key={quiz.id} quiz={quiz}></QuizQuestion>)
             }
             </div>
                 

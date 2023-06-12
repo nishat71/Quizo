@@ -1,5 +1,6 @@
 import React from 'react';
 import Topics from './Topics';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
                     <p className='text-md'>WELCOME TO QUIZO</p>
                     <h1 className='text-4xl font-bold md:text-6xl drop-shadow-2xl'>Programming Quiz Contest</h1>
                     <p className='md:max-w-[600px] sm:max-w-[500px] drop-shadow-2xl md:text-xl py-3 mx-auto text-lg'>Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.</p>
-                    <button className='px-3 py-2 font-medium tracking-wide text-white transition duration-200 bg-transparent border border-white rounded-md shadow-md hover:bg-white hover:text-black focus:shadow-outline focus:outline-none'>Read More</button>
+                    <Link to="/topics"><button className='px-3 py-2 font-medium tracking-wide text-white transition duration-200 bg-transparent border border-white rounded-md shadow-md hover:bg-white hover:text-black focus:shadow-outline focus:outline-none'>Read More</button></Link>
                 </div>
             </div>
             <Topics/>
