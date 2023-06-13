@@ -8,7 +8,6 @@ const Error = () => {
         <section className="flex items-center h-screen p-16 text-gray-100 bg-gray-900">
             <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
                 <div className="max-w-md text-center">
-
                     {
                         error && (
                             <div>
@@ -20,14 +19,10 @@ const Error = () => {
                             </div>
                         )
                     }
-    
                     <Link to="/"
                    className="px-8 py-3 font-semibold text-gray-900 rounded bg-violet-400">
                         Back to homepage
-                    </Link>
-
-
-                    
+                    </Link> 
                 </div>
             </div>
         </section>

@@ -9,7 +9,6 @@ const Home = () => {
             src="https://www.springboard.com/blog/wp-content/uploads/2022/08/programming-skills.png" alt="" />
             <div className='absolute left-0 w-full h-screen top-16 bg-black/60'></div>
             <div className='absolute flex flex-col justify-center w-full h-full text-white top-16'>
-                {/* <div className='max-w-[1100px] m-auto absolute p-4 md:left-[10%]'> */}
                 <div className='max-w-[1100px] mx-auto text-center'>
                     <p className='text-md'>WELCOME TO QUIZO</p>
                     <h1 className='text-4xl font-bold md:text-6xl drop-shadow-2xl'>Programming Quiz Contest</h1>

@@ -4,8 +4,8 @@ const Blog = () => {
     return (
         <section className="h-screen text-gray-100 bg-gray-900">
             <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-                <h2 className="text-2xl font-semibold sm:text-4xl">Some Questions Answer</h2>
-                <p className="mt-4 mb-8 text-gray-400">Some basic question answers are given below.</p>
+                <h2 className="text-2xl font-semibold md:text-4xl">Some Questions Answer</h2>
+                <p className="mt-2 mb-8 text-gray-400 sm:mt-4">Some basic question answers are given below.</p>
                 <div className="space-y-4">
                     <details className="w-full border rounded-lg" open="">
                         <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400"> What is the purpose of React Router?</summary>

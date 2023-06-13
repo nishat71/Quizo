@@ -6,13 +6,13 @@ const Topic = ({topic}) => {
 
 
     return (
-        <div className='max-w-xs p-3 bg-gray-300 rounded-md shadow-lg'>
-            <img className='object-cover object-center w-full h-56 mb-6 bg-gray-400 rounded shadow-lg md:h-64 xl:h-72'
+        <div className='w-full max-w-xs p-3 mx-auto bg-gray-300 rounded-md shadow-lg'>
+            <img className='object-cover object-center w-full h-40 mb-6 bg-gray-400 rounded shadow-lg md:h-64 xl:h-72'
             src={logo} alt=''/>
            <div className='flex flex-col justify-between space-y-8'>
                 <div className='space-y-2'>
-                    <p className='text-3xl font-semibold leading-none tracking-wide sm:text-2xl'>{name}</p>
-                    <p className='text-gray-700 '>No of Ques: {total}</p>
+                    <p className='text-xl font-semibold leading-none tracking-wide sm:text-2xl'>{name}</p>
+                    <p className='text-gray-700 text-md'>No of Ques: {total}</p>
                 </div>
                 <Link to={`/topic/${id}`}>
                     <button type='button'

@@ -13,10 +13,8 @@ const Statistics = () => {
     return (
        <div className='chart'>
             <h2 className='text-xl font-semibold text-center md:text-3xl mt-14'>Statistics Of Total Questions</h2>
-            
              <div className='flex items-center justify-center'>
                 <LineChart width={400} height={400} data={StatisticsData} margin={{ top: 50, bottom: 5, }}>
-                    
                     <CartesianGrid strokeDasharray="3 3" />
                     <Line type="monotone" dataKey="total" stroke="#82ca9d" activeDot={{ r: 8 }}/>
                     <XAxis dataKey="name" />
